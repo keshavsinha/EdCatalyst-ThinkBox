@@ -1,0 +1,4 @@
+This extension bundles third-party software in the ocr/ folder:
+
+- Tesseract.js and tesseract.js-core (https://github.com/naptha/tesseract.js), Apache License 2.0 (see ocr/LICENSE)
+- Tesseract English trained data (https://github.com/tesseract-ocr/tessdata), Apache License 2.0

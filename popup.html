@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="popup.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">EC</div>
+  <div>
+    <div class="title">EdCatalyst ThinkBox</div>
+    <div class="sub">THINK FIRST. THEN CHECK.</div>
+  </div>
+</header>
+
+<div class="status" id="status"><span class="dot"></span><span id="statusText">Not activated</span></div>
+
+<main>
+  <div class="lbl">AI PROVIDER</div>
+  <div class="providers" id="providers">
+    <button data-p="claude"><span class="orb" style="background:radial-gradient(circle at 35% 30%,#ffb08a,#e8622f)"></span>Claude</button>
+    <button data-p="openai"><span class="orb" style="background:radial-gradient(circle at 35% 30%,#9cf0bf,#18a957)"></span>OpenAI</button>
+    <button data-p="gemini"><span class="orb" style="background:radial-gradient(circle at 35% 30%,#8fb9ff,#2a62d8)"></span>Gemini</button>
+    <button data-p="groq"><span class="orb" style="background:radial-gradient(circle at 35% 30%,#c6a8ff,#6b3fc9)"></span>Groq</button>
+  </div>
+
+  <div class="lbl row">MODEL <button class="link" id="loadModels" title="Fetch the models your key can use">↻ Load models</button></div>
+  <select id="model"></select>
+
+  <div class="lbl">API KEY</div>
+  <div class="keywrap">
+    <input id="key" type="password" placeholder="Paste your API key" autocomplete="off" spellcheck="false">
+    <span class="badge" id="badge">ACTIVE</span>
+    <button class="eye" id="eye" title="Show / hide">👁</button>
+  </div>
+  <div class="hint">Get key: <a id="keyLink" target="_blank"></a> — <span id="keyNote"></span></div>
+
+  <div class="lbl">STUDY MODE</div>
+  <select id="mode"></select>
+  <label class="chk"><input type="checkbox" id="verify" checked> <span><b>Double-check answers</b> (recommended) — a second independent check; warns when unsure</span></label>
+
+  <button class="primary" id="save">💾 Activate &amp; Save</button>
+  <div class="msg" id="msg"></div>
+
+  <hr>
+  <div class="lbl">CLEAR API KEY</div>
+  <button class="soft" id="reset">🗑 Reset API Key</button>
+
+  <hr>
+  <div class="lbl">HOW TO USE</div>
+  <ol class="how">
+    <li>Click the orange <b>EC ThinkBox</b> button on any page.</li>
+    <li><b>Explain Selected Text</b> — select the question + options first.</li>
+    <li><b>Select Area</b> — drag a box around the question (most accurate).</li>
+    <li><b>Screenshot</b> — reads the whole visible screen.</li>
+    <li>Shortcuts: <b>Alt+Shift+A</b> text, <b>Alt+Shift+X</b> area, <b>Alt+Shift+S</b> screenshot.</li>
+  </ol>
+  <div class="note">For practice and revision only — not for graded exams.</div>
+  <div class="foot">edcatalyst.in</div>
+</main>
+<script src="providers.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
