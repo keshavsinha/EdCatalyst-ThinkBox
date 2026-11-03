@@ -2,6 +2,10 @@
 
 **Think first. Then check.** A study companion that gives hints before answers.
 
+▶️ **Video walkthrough:** [Watch on YouTube](https://youtu.be/un0SgCCNLqc)
+
+[![ThinkBox video walkthrough](https://img.youtube.com/vi/un0SgCCNLqc/hqdefault.jpg)](https://youtu.be/un0SgCCNLqc)
+
 A Chrome extension that helps students **practise and revise**. Select a question on any page, or drag a box around it, and get a hint first, then the answer with an explanation of the concept and why the other options are wrong.
 
 > **For practice and revision only.** Do not use this extension during graded exams or assessments. That breaks the academic-integrity rules of your institution and of course providers.
